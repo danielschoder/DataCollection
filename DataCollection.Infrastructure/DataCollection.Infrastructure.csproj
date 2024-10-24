@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.18.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataCollection.Contracts\DataCollection.Contracts.csproj" />
+    <ProjectReference Include="..\DataCollection.Domain\DataCollection.Domain.csproj" />
+    <ProjectReference Include="..\DataCollection.Application\DataCollection.Application.csproj" />
+  </ItemGroup>
+
+</Project>

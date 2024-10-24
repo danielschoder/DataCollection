@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Version>1.0.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\DataCollection.Application\DataCollection.Application.csproj" />
+	<ProjectReference Include="..\DataCollection.Contracts\DataCollection.Contracts.csproj" />
+	<ProjectReference Include="..\DataCollection.Domain\DataCollection.Domain.csproj" />
+	<ProjectReference Include="..\DataCollection.Infrastructure\DataCollection.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+@Formula1.Api_HostAddress = https://localhost:7163
+
+### 
+
+POST {{Formula1.Api_HostAddress}}/api/results
+Content-Type: application/json
+{
+  "year": 2024,
+  "round": 16
+}
+
+###
+
+POST {{Formula1.Api_HostAddress}}/api/races
+Content-Type: application/json
+{
+  "year": 2024
+}
+
+###
